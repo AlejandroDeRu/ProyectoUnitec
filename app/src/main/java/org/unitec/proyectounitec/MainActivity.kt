@@ -15,7 +15,7 @@ super();
  */
 
 // super en kotlin es una palabra reservada para implementar o crear una funcion o metodo
-//Vamos a probar que funciona Github
+//Vamos a probar que funciona Github, esto lo estoy editando en el repositorio.
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(nombre: Bundle?) {
