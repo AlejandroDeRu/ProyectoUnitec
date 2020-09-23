@@ -20,6 +20,6 @@ super();
 class MainActivity : AppCompatActivity() {
     override fun onCreate(nombre: Bundle?) {
         super.onCreate(nombre)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.ejemplito)
     }
 }
