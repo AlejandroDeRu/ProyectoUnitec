@@ -1,7 +1,9 @@
 package org.unitec.proyectounitec
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import kotlinx.android.synthetic.main.ejemplito.*
 
 // El punto de partido de toda app es la MainActivity (Presenter)
 
@@ -25,5 +27,18 @@ class MainActivity : AppCompatActivity() {
         //Las sentencias no terminan en ;
         supportActionBar?.hide()
         setContentView(R.layout.ejemplito)
+
+        //Aqui vamos a introducir la primera parte de codigo verdadedamente de kotlin
+        botoncito.setOnClickListener {
+            //Declarar variable de tipo Intent en kotlin
+            // int x;
+            //var x:Int
+            // var x=4
+            var i=Intent(this,ComandoVozActivity::class.java)
+
+            //Lo invocamos
+            startActivity(i)
+
+        }
     }
 }
